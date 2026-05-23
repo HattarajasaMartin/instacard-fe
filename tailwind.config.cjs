@@ -1,0 +1,82 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        surface: {
+          DEFAULT: "#faf9f5",
+          dim: "#dadad6",
+          bright: "#faf9f5",
+          "container-lowest": "#ffffff",
+          "container-low": "#f4f4f0",
+          container: "#eeeeea",
+          "container-high": "#e9e8e4",
+          "container-highest": "#e3e3df",
+          variant: "#e3e3df",
+        },
+        "on-surface": {
+          DEFAULT: "#1a1c1a",
+          variant: "#424842",
+        },
+        "inverse-surface": "#2f312e",
+        "inverse-on-surface": "#f1f1ed",
+        outline: "#737971",
+        "outline-variant": "#c2c8c0",
+        "surface-tint": "#49654d",
+        primary: {
+          DEFAULT: "#49654d",
+          container: "#b8d8ba",
+          "container-on": "#435f47",
+          inverse: "#afcfb1",
+          fixed: "#caebcc",
+          "fixed-dim": "#afcfb1",
+          "on-fixed": "#05210e",
+          "on-fixed-variant": "#314d36",
+          "on": "#ffffff",
+        },
+        secondary: {
+          DEFAULT: "#5e5b7a",
+          container: "#ded9fd",
+          "container-on": "#605d7c",
+          fixed: "#e4dfff",
+          "fixed-dim": "#c7c2e6",
+          "on-fixed": "#1b1833",
+          "on-fixed-variant": "#464361",
+          "on": "#ffffff",
+        },
+        tertiary: {
+          DEFAULT: "#6c5b4f",
+          container: "#e2ccbc",
+          "container-on": "#665649",
+          fixed: "#f5dece",
+          "fixed-dim": "#d8c2b3",
+          "on-fixed": "#251910",
+          "on-fixed-variant": "#534438",
+          "on": "#ffffff",
+        },
+        error: {
+          DEFAULT: "#ba1a1a",
+          container: "#ffdad6",
+          "container-on": "#93000a",
+          "on": "#ffffff",
+        },
+        background: "#faf9f5",
+        "on-background": "#1a1c1a",
+      },
+      fontFamily: {
+        geist: ["Geist", "sans-serif"],
+      },
+      borderRadius: {
+        sm: "0.25rem",
+        md: "0.75rem",
+        lg: "1rem",
+        xl: "1.5rem",
+      },
+      spacing: {
+        sidebar: "280px",
+      },
+    },
+  },
+  plugins: [],
+};
